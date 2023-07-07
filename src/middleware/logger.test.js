@@ -1,6 +1,6 @@
 'use strict';
 
-const logger = require('./logger,js');
+const logger = require('./logger.js');
 
 describe("test the logger middleware", () => {
   let consoleSpy;
@@ -10,19 +10,19 @@ describe("test the logger middleware", () => {
 
 
     beforeEach(() => {
-      consoleSpy = jest.spyOn(console, "log").mockImplementation
-    })
+      consoleSpy = jest.spyOn(console, 'log').mockImplementation();
+    });
 
     afterEach(() => {
       consoleSpy.mockRestore();
     });
 
-    test("properly logs some output", () => {
+    test('properly logs some output', () => {
       logger(req,res,next);
-      expect(consoleSpy).toHaveBeenCalledWith(`Hello: ${req.path}`);
-    })
+      expect(consoleSpy).toHaveBeenCalledWith(`Hello, welcome traveler ${req.path}`);
+    });
 
-    test("the next function gets called", () => {
+    test('the next function gets called', () => {
       logger(req, res, next);
     expect(next).toHaveBeenCalledWith();
     });
