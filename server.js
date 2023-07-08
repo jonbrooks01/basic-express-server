@@ -6,17 +6,10 @@ const logger = require('./src/middleware/logger.js');
 const getBrowser = require('./src/middleware/getBrowser.js');
 const handle500 = require('./src/error-handlers/500.js');
 const { validateHello, handleHello } = require('./src/middleware/validator.js');
+const handle404 = require('./src/error-handlers/404.js');
+
 function start(port) {
   server.listen(port, () => console.log(`I am listening on port ${port}`));
-}
-
-function handle404(req,res,next) {
-  const errorObject = {
-    status: 404,
-    message: 'Sorry, we could not find what your looking for',
-  };
-
-  res.status(404).json(errorObject);
 }
 
 
