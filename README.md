@@ -1,18 +1,18 @@
 # basic-express-server
 
 LAB - 02
-Deployment Test
+Express
+
 Author: Jonathan Brooks
-tests report
-front-end
+
 [deployed server](https://deployment-practice-a08x.onrender.com)
+
 Setup
-.env requirements
-PORT - 3000
-Running the app
-npm start
-Endpoint:
-Returns Object
+.env requirements:PORT - 3000
+
+Running the app: npm start
+
+Endpoint: Returns Object
 
 {
   "domain": "deployment-practice-a08x.onrender.com",
