@@ -5,6 +5,7 @@ Deployment Test
 Author: Jonathan Brooks
 tests report
 front-end
+[deployed server](https://deployment-practice-a08x.onrender.com)
 Setup
 .env requirements
 PORT - 3000
@@ -14,7 +15,7 @@ Endpoint:
 Returns Object
 
 {
-  "domain": [Here for rendered site](https://deployment-practice-a08x.onrender.com),
+  "domain": "deployment-practice-a08x.onrender.com",
   "status": "running",
   <!-- "port":  -->
 }
