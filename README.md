@@ -15,8 +15,8 @@ Running the app: npm start
 Endpoint: Returns Object
 
 {
-  "domain": "deployment-practice-a08x.onrender.com",
-  "status": "running",
+  "domain": "deployment-practice-a08x.onrender.com/hello/name",
+  "status": "{name: name}",
   <!-- "port":  -->
 }
 Tests
